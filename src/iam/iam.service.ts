@@ -32,7 +32,8 @@ export class IamService {
         new EventEmitter<Array<string>>();
 
     constructor(
-        // @Inject(BasicAuthService) private readonly basicAuthService: BasicAuthService,
+        // @Inject(BasicAuthService) private readonly basicAuthService:
+        // BasicAuthService,
         @Inject(JwtService) private readonly jwtService: JwtService,
         @Inject(CookieService) private readonly cookieService: CookieService) {
         console.log('IamService.constructor()');
